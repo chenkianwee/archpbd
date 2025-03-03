@@ -1,0 +1,62 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/intro
+parts:
+- caption: Motivation and Background
+  numbered: true
+  chapters:
+  - file: docs/01/01_motivation
+  - file: docs/01/02_0_process
+    sections:
+    - file: docs/01/02_1_formulate
+- caption: Concepts
+  numbered: true        
+  chapters:
+  - file: docs/02/01_hvac
+    sections:
+    - file: docs/02/01_1_heat
+    - file: docs/02/01_2_cmf
+    - file: docs/02/01_3_climate
+    - file: docs/02/01_4_bldg_behave
+    - file: docs/02/01_5_passive
+    - file: docs/02/01_6_hvac
+  - file: docs/02/02_daylight
+    sections:
+    - file: docs/02/02_1_light
+  - file: docs/02/04_sim
+    sections:
+    - file: docs/02/04_1_exp_mod_sim
+    - file: docs/02/04_2_open_comp
+- caption: Tutorials
+  numbered: true
+  chapters:
+  - file: docs/03/02_shoebox
+    sections:
+    - file: docs/03/02_1_shoebox_p1
+    - file: docs/03/02_2_shoebox_p2
+    - file: docs/03/02_3_shoebox_p3
+    - file: docs/03/02_4_shoebox_p4
+    - file: docs/03/02_5_shoebox_p5
+- caption: Software How-To Guides
+  numbered: true
+  chapters:
+  - file: docs/04/01_fcbim
+  - file: docs/04/02_librecad
+  - file: docs/04/03_openstudiopy
+  - file: docs/04/04_ifcopenshell
+- caption: Building Performance References
+  numbered: true
+  chapters:
+  - file: docs/05/01_rating
+  - file: docs/05/02_thermcond
+  - file: docs/05/03_rad_trsf
+  - file: docs/05/04_climate
+  - file: docs/05/05_loads
+  - file: docs/05/06_lighting
+  - file: docs/05/07_tcomf
+- caption: References
+  numbered: true
+  chapters:
+  - file: docs/biblio
