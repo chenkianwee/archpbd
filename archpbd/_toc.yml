@@ -32,13 +32,7 @@ parts:
 - caption: Tutorials
   numbered: true
   chapters:
-  - file: docs/03/02_shoebox
-    sections:
-    - file: docs/03/02_1_shoebox_p1
-    - file: docs/03/02_2_shoebox_p2
-    - file: docs/03/02_3_shoebox_p3
-    - file: docs/03/02_4_shoebox_p4
-    - file: docs/03/02_5_shoebox_p5
+  - file: docs/03/01_tut
 - caption: Software How-To Guides
   numbered: true
   chapters:
@@ -46,6 +40,7 @@ parts:
   - file: docs/04/02_librecad
   - file: docs/04/03_openstudiopy
   - file: docs/04/04_ifcopenshell
+  - file: docs/04/05_fcpy
 - caption: Building Performance References
   numbered: true
   chapters:
