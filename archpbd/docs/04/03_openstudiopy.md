@@ -775,3 +775,6 @@ print(data[1].header.metadata)
 
 - prototype buildings
     - https://www.energycodes.gov/prototype-building-models
+
+- modeling radiant panels in energyplus
+    - https://unmethours.com/question/2344/how-to-model-ceiling-radiant-panels/

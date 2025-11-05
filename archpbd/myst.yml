@@ -1,0 +1,64 @@
+version: 1
+project:
+  title: Architectural Performance-Based Design
+  authors:
+    - name: Kian Wee Chen
+  copyright: '2024'
+  github: chenkianwee/pbad
+  bibliography:
+    - docs/references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: docs/intro.md
+    - title: Motivation and Background
+      children:
+        - file: docs/01/01_motivation.md
+        - file: docs/01/02_0_process.md
+          children:
+            - file: docs/01/02_1_formulate.md
+    - title: Concepts
+      children:
+        - file: docs/02/01_hvac.md
+          children:
+            - file: docs/02/01_1_heat.md
+            - file: docs/02/01_2_cmf.md
+            - file: docs/02/01_3_climate.md
+            - file: docs/02/01_4_bldg_behave.md
+            - file: docs/02/01_5_passive.md
+            - file: docs/02/01_6_hvac.md
+        - file: docs/02/02_daylight.md
+          children:
+            - file: docs/02/02_1_light.md
+        - file: docs/02/04_sim.md
+          children:
+            - file: docs/02/04_1_exp_mod_sim.md
+            - file: docs/02/04_2_open_comp.md
+    - title: Tutorials
+      children:
+        - file: docs/03/01_tut.md
+    - title: Software How-To Guides
+      children:
+        - file: docs/04/01_fcbim.md
+        - file: docs/04/02_librecad.md
+        - file: docs/04/03_openstudiopy.md
+        - file: docs/04/04_ifcopenshell.md
+        - file: docs/04/05_fcpy.md
+    - title: Building Performance References
+      children:
+        - file: docs/05/01_rating.md
+        - file: docs/05/02_thermcond.md
+        - file: docs/05/03_rad_trsf.md
+        - file: docs/05/04_climate.md
+        - file: docs/05/05_loads.md
+        - file: docs/05/06_lighting.md
+        - file: docs/05/07_tcomf.md
+    - title: References
+      children:
+        - file: docs/biblio.md
+site:
+  options:
+    folders: true
+  template: book-theme
