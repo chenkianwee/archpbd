@@ -755,7 +755,7 @@ print(data[1].header.metadata)
 - Resources
     - openstudio resources (https://github.com/NREL/OpenStudio-resources)
     - openstudio wiki (https://github.com/NREL/OpenStudio/wiki)
-    - openstudio-standards ruby library API (https://www.rubydoc.info/gems/openstudio-standards/)
+    - openstudio-standards ruby library API (https://gemdocs.org/gems/openstudio-standards/)
     - Radiant slab measure (https://bcl.nrel.gov/api/download?uids=8091a0c3-7760-4da6-adf4-133d55872816)
         - model_add_low_temp_radiant (https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_low_temp_radiant-instance_method)
         - model_add_doas (https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_doas-instance_method)

@@ -17,8 +17,6 @@ project:
       children:
         - file: docs/01/01_motivation.md
         - file: docs/01/02_0_process.md
-          children:
-            - file: docs/01/02_1_formulate.md
     - title: Concepts
       children:
         - file: docs/02/01_hvac.md
