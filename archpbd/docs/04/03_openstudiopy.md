@@ -656,6 +656,9 @@
     openstudio execute_ruby_script radiant_slab_with_doas_test.rb
     ```
 
+- Put your measure in the openstudio measure folder. You can open the folder by going to the Measures tab on the left, and click on the 'my' icon. Copy and paste your Measure folder into this folder. Close and open Openstudio Application to make sure the GUI detects the newly added measure.
+- Test your measure by opening a .osm file with openstudio application go to Component & Measures -> Apply Measure Now and select the measure you want to test.
+
 ## Openstudio Code Snippets
 - Removing objects from workspace
     ```
