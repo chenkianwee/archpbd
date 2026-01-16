@@ -612,7 +612,15 @@
         # endregion: MAIN
     ```
 
-## Writing Python Measure
+## Writing Measure
+- Measure writing guide (https://nrel.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#additional-references)
+- taxonomy tag: https://bcl.nrel.gov/tags
+- Measure type
+    - ModelMeasure: acts on .osm model
+    - EnergyPlusMeasure: EnergyPlus measures give measure authors the ability to continue a programmatic modeling workflow throughout the BEM process, but EnergyPlus measures operate on an IDF; as such, they are intended to be run after the OSM has been translated from OpenStudio to EnergyPlus.
+    - ReportingMeasure: measures are run after the simulation to extract results
+
+### Python measure
 1. Create a new measure with the openstudio core
     ```
     openstudio measure new --class-name HVACResults --type EnergyPlusMeasure --language Python --name "My energyplus measure" --description "this is my measure" --modeler-description "this does complicated stuff" --taxonomy-tag "Reporting.QAQC" ./measures/hvac_results
@@ -624,6 +632,28 @@
 2. You can update the measure.xml file with this command
     ```
     openstudio measure -u ./measures/hvac_results
+    ```
+3. Test your python measure by running the following
+    ```
+    openstudio execute_python_script radiant_slab_with_doas_test.py
+    ```
+
+### Ruby measure
+1. Create a new measure with the openstudio core
+    ```
+    openstudio measure new --class-name HVACResults --type ModelMeasure --language Ruby --name "My energyplus measure" --description "this is my measure" --modeler-description "this does complicated stuff" --taxonomy-tag "HVAC.Whole System" ./measures/hvac_results
+    ```
+    - you can look at the help with this command
+        ```
+        openstudio measure --help
+        ```
+2. You can update the measure.xml file with this command
+    ```
+    openstudio measure -u ./measures/hvac_results
+    ```
+3. Test your ruby measure by running the following
+    ```
+    openstudio execute_ruby_script radiant_slab_with_doas_test.rb
     ```
 
 ## Openstudio Code Snippets
