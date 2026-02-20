@@ -635,7 +635,20 @@
     ```
     openstudio measure -u ./measures/hvac_results
     ```
-3. Test your python measure by running the following
+
+3. Cut and paste the following code to the end of your test file, this will run pytest from within the script
+    ```
+    if __name__ == "__main__":
+        # This is equivalent to running 'pytest' in the terminal
+        exit_code = pytest.main()
+        
+        if exit_code == 0:
+            print("Tests passed!")
+        else:
+            print(f"Tests failed with exit code {exit_code}")
+    ```
+    
+4. Test your python measure by running the following
     ```
     openstudio execute_python_script radiant_slab_with_doas_test.py
     ```
