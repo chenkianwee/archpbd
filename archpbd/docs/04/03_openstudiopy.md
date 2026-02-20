@@ -618,7 +618,9 @@
 - Measure type
     - ModelMeasure: acts on .osm model
     - [EnergyPlusMeasure](https://natlabrockies.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#energyplus-measures): EnergyPlus measures give measure authors the ability to continue a programmatic modeling workflow throughout the BEM process, but EnergyPlus measures operate on an IDF; as such, they are intended to be run after the OSM has been translated from OpenStudio to EnergyPlus.
+        - EnergyPlusMeasure example: https://github.com/NatLabRockies/openstudio-common-measures-gem/tree/develop/lib/measures/AddSimplePvToShadingSurfacesByType
     - [ReportingMeasure](https://natlabrockies.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#reporting-measures): measures are run after the simulation to extract results
+        - ReportingMeasure example: https://github.com/NatLabRockies/openstudio-common-measures-gem/tree/develop/lib/measures/openstudio_results 
 
 ### Python measure
 1. Create a new measure with the openstudio core
