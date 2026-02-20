@@ -613,12 +613,12 @@
     ```
 
 ## Writing Measure
-- Measure writing guide (https://nrel.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#additional-references)
+- [Measure writing guide](https://natlabrockies.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/)
 - taxonomy tag: https://bcl.nrel.gov/tags
 - Measure type
     - ModelMeasure: acts on .osm model
-    - EnergyPlusMeasure: EnergyPlus measures give measure authors the ability to continue a programmatic modeling workflow throughout the BEM process, but EnergyPlus measures operate on an IDF; as such, they are intended to be run after the OSM has been translated from OpenStudio to EnergyPlus.
-    - ReportingMeasure: measures are run after the simulation to extract results
+    - [EnergyPlusMeasure](https://natlabrockies.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#energyplus-measures): EnergyPlus measures give measure authors the ability to continue a programmatic modeling workflow throughout the BEM process, but EnergyPlus measures operate on an IDF; as such, they are intended to be run after the OSM has been translated from OpenStudio to EnergyPlus.
+    - [ReportingMeasure](https://natlabrockies.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#reporting-measures): measures are run after the simulation to extract results
 
 ### Python measure
 1. Create a new measure with the openstudio core
@@ -655,9 +655,10 @@
     ```
     openstudio execute_ruby_script radiant_slab_with_doas_test.rb
     ```
+### Python/Ruby measure
+1. Put your measure in the openstudio measure folder. You can open the folder by going to the Measures tab on the left, and click on the 'my' icon. Copy and paste your Measure folder into this folder. Close and open Openstudio Application to make sure the GUI detects the newly added measure.
 
-- Put your measure in the openstudio measure folder. You can open the folder by going to the Measures tab on the left, and click on the 'my' icon. Copy and paste your Measure folder into this folder. Close and open Openstudio Application to make sure the GUI detects the newly added measure.
-- Test your measure by opening a .osm file with openstudio application go to Component & Measures -> Apply Measure Now and select the measure you want to test.
+2. Test your measure by opening a .osm file with openstudio application go to Component & Measures -> Apply Measure Now and select the measure you want to test.
 
 ## Openstudio Code Snippets
 - Removing objects from workspace
