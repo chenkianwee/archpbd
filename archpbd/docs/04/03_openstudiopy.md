@@ -647,8 +647,9 @@
         else:
             print(f"Tests failed with exit code {exit_code}")
     ```
-    
-4. Test your python measure by running the following
+4. cd to the tests folder of the measure.
+
+5. Test your python measure by running the following
     ```
     openstudio execute_python_script radiant_slab_with_doas_test.py
     ```
