@@ -621,7 +621,8 @@
         - EnergyPlusMeasure example: https://github.com/NatLabRockies/openstudio-common-measures-gem/tree/develop/lib/measures/AddSimplePvToShadingSurfacesByType
     - [ReportingMeasure](https://natlabrockies.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#reporting-measures): measures are run after the simulation to extract results
         - ReportingMeasure example: https://github.com/NatLabRockies/openstudio-common-measures-gem/tree/develop/lib/measures/openstudio_results 
-
+    - https://github.com/NatLabRockies/OpenStudio/blob/develop/src/utilities/bcl/BCLEnums.hpp#L29
+    
 ### Python measure
 1. Create a new measure with the openstudio core
     ```
