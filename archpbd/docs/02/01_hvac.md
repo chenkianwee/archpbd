@@ -1,3 +1,3 @@
 # HVAC-Conscious Architectural Design
 
-:context: children
+```{tableofcontents}
