@@ -1,4 +1,7 @@
 # HVAC-Conscious Architectural Design
 
-```{tableofcontents}
+```markdown
+:::{toc}
+:context: children
+:::
 ```
