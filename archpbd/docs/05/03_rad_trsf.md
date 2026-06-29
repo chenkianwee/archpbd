@@ -54,3 +54,9 @@ These notes are based on these sources:
     - measures near-surface infra-red (IR) radiation, approximately from 4.5 μm to 100 μm on the electromagnetic spectrum (thereby excluding solar radiation).
   - Pyranometer (https://en.wikipedia.org/wiki/Pyranometer)
     -  measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m2) from the hemisphere above within a wavelength range 0.3 μm to 3 μm.
+
+## Definition of MRT
+Mean Radiant Temperature (MRT) is defined as the temperature of a uniform, black enclosure that exchanges the same amount of heat by radiation with the occupant as the actual surroundings (ASHRAE, 2020).
+
+- ASHRAE, 2020. ANSI/ASHRAE Standard 55-2020 Thermal Environmental Conditions for Human Occupancy. 
+
