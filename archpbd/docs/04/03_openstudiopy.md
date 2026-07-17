@@ -1,15 +1,15 @@
 # Understanding the Openstudio Workflow
-- OpenStudio Workflow (.osw file) - describes the workflow steps of OpenStudio <a href="https://nrel.github.io/OpenStudio-user-documentation/reference/command_line_interface/#osw-structure" target="_blank">official explanation here.</a>
-    - <a href="https://raw.githubusercontent.com/NREL/OpenStudio-workflow-gem/develop/spec/schema/osw_output.json" target="_blank">.osw schema</a>
+- OpenStudio Workflow (.osw file) - describes the workflow steps of OpenStudio <a href="https://natlabrockies.github.io/OpenStudio-user-documentation/reference/command_line_interface/#osw-structure" target="_blank">official explanation here.</a>
+    - <a href="https://raw.githubusercontent.com/natlabrockies/OpenStudio-workflow-gem/develop/spec/schema/osw_output.json" target="_blank">.osw schema</a>
 - In an OpenStudio Workflow this happens:
     1. An OpenStudio Model (.osm file) is loaded.
         - OpenStudio Model - a model describing the building. This include the construction, thermal zones and simulation configurations etc (https://s3.amazonaws.com/openstudio-sdk-documentation/cpp/OpenStudio-3.7.0-doc/model/html/index.html#introduction_model).
     2. OpenStudio Measure are applied to the osm.
-        - A set of programmable instructions that make changes to the osm model (https://nrel.github.io/OpenStudio-user-documentation/getting_started/about_measures/).
-        - A measure must consists of all the files listed <a href="https://nrel.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#measure-file-structure" target="_blank">here.</a> 
-        - You can find a library of Measures at the Building Component Library webpage (https://bcl.nrel.gov/)
+        - A set of programmable instructions that make changes to the osm model [Link](https://natlabrockies.github.io/OpenStudio-user-documentation/getting_started/about_measures/).
+        - A measure must consists of all the files listed <a href="https://natlabrockies.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#measure-file-structure" target="_blank">here.</a> 
+        - You can find a library of Measures at the Building Component Library webpage (https://bcl.nlr.gov/)
     3. The osm model is then translated to either IDF for energyplus simulation or .RAD for radiance simulation depending on the measure. The measure will specify how the data from each simulation results feed into each other.
-        - for example "Radiance Daylighting Measure" (https://bcl.nrel.gov/api/download?uids=1e3cfef8-b051-4e60-8bb0-ed2d29d4f45f) - The OpenStudio model is converted to Radiance format. All spaces containing daylighting objects (illuminance map, daylighting control point, and optionally glare sensors) will have annual illuminance calculated using Radiance, and the OS model's lighting schedules can be overwritten with those based on daylight responsive lighting controls.
+        - for example "Radiance Daylighting Measure" (https://bcl.nlr.gov/api/download?uids=1e3cfef8-b051-4e60-8bb0-ed2d29d4f45f) - The OpenStudio model is converted to Radiance format. All spaces containing daylighting objects (illuminance map, daylighting control point, and optionally glare sensors) will have annual illuminance calculated using Radiance, and the OS model's lighting schedules can be overwritten with those based on daylight responsive lighting controls.
     4. Once the simulations are completed. The OpenStudio Reporting Measures are applied to generate reports of the simulation result.
         - An error at any point will stop the execution. Whether successful or not an output OSW file is written to show the output of the workflow. 
 
